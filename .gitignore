@@ -1,0 +1,30 @@
+# Personal Garmin data: never commit. Live captures and downloads stay local.
+data/
+*.fit
+*.gpx
+*.tcx
+*.kml
+*.zip
+*.csv
+
+# Tokens and secrets (they live in ~/.garmin-mcp, but never let a copy in here)
+garmin_tokens.json
+.garmin-mcp/
+.env
+.env.*
+
+# Logs, caches, tooling
+*.log
+logs/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.claude/settings.local.json
